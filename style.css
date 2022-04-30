@@ -11,34 +11,6 @@
   min-height: 100vh;
   margin: 0;
 }
-#marce:hover{
-    background: coral;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    animation: mover 4s infinite;
-    animation-delay: 1000ms;
-}
-@keyframes mover {
-    0%{
-        transform: translateX(0px);
-    }
-    25%{
-        transform: translateX(200px);
-        background: linear-gradient(120deg, red 0%,darkred 100%);
-    }
-    50%{
-        transform: translateY(200px) translateX(200px);
-        background: linear-gradient(to top, blue 0%, darkblue 100%);
-    }
-    75%{ 
-         transform: translateX(0px) translateY(200px);
-        background: linear-gradient(to top, orange 0%, coral 100%);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
 
 .article__title,
 .article__keywords,
