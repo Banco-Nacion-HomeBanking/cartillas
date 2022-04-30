@@ -1,0 +1,144 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://c.wallhere.com/photos/dc/fb/1600x908_px_america_bridge_brooklyn_cities_city_Hudson_landscape-1723623.jpg!d);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+#marce:hover{
+    background: coral;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    animation: mover 4s infinite;
+    animation-delay: 1000ms;
+}
+@keyframes mover {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(200px);
+        background: linear-gradient(120deg, red 0%,darkred 100%);
+    }
+    50%{
+        transform: translateY(200px) translateX(200px);
+        background: linear-gradient(to top, blue 0%, darkblue 100%);
+    }
+    75%{ 
+         transform: translateX(0px) translateY(200px);
+        background: linear-gradient(to top, orange 0%, coral 100%);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.article__title,
+.article__keywords,
+.article__presentation,
+.skills__title {
+  letter-spacing: 2.5px;
+  margin: 0;
+}
+
+.main {
+  background-color: hsla(222, 14%, 15%, 0.75);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 18rem;
+  padding: 2rem;
+  border-radius: 3rem;
+}
+
+.header {
+  display: flex;
+}
+
+.header__professional-image-container {
+  display: flex;
+  max-width: 256px;
+  margin: 0 auto;
+}
+
+.header__professional-image {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.article__title {
+  font-size: 1.5rem;
+}
+
+.article__keywords {
+  font-size: 1.25rem;
+}
+
+.article__presentation {
+  font-size: 0.75rem;
+}
+
+.article__presentation::before {
+  content: '🎧';
+}
+
+.article__presentation::after {
+  content: '🎧';
+}
+
+.footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.footer__link-icon-container {
+  display: flex;
+  transition: all 0.3s;
+  max-width: 2rem;
+}
+
+.footer__link-icon-container:hover {
+  transform: scale(3);
+}
+
+.footer__link-icon {
+  width: 100%;
+}
+
+@media (min-width: 854px) {
+  .main {
+    max-width: 32rem;
+    gap: 2rem;
+  }
+
+  .header__professional-image-container {
+    max-width: 20rem;
+  }
+
+  .article__title {
+    font-size: 2rem;
+    color: rgb(141, 248, 203);
+  }
+
+  .article__keywords {
+    font-size: 1.5rem;
+  }
+
+  .article__presentation {
+    font-size: 1rem;
+  }
+}
